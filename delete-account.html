@@ -3,49 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delete Account — Doomsday Trainer</title>
+  <title>Privacy Policy — Doomsday Trainer</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #0d1117; color: #c9d1d9; font-family: 'Courier New', monospace; padding: 2rem 1rem; max-width: 720px; margin: 0 auto; line-height: 1.7; }
-    h1 { color: #58a6ff; font-size: 1.5rem; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid #58a6ff; padding: 1rem; margin-bottom: 2rem; }
-    h2 { color: #58a6ff; font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid #21262d; padding-bottom: 0.4rem; margin: 2rem 0 1rem; }
+    body { background: #0d1117; color: #c9d1d9; font-family: 'Courier New', monospace; padding: 2rem 1rem; max-width: 720px; margin: 0 auto; line-height: 1.8; }
+    .header-box { border: 1px solid #58a6ff; padding: 1.2rem; margin-bottom: 2rem; }
+    h1 { color: #58a6ff; font-size: 1.4rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.3rem; }
+    .subtitle { font-size: 0.85rem; opacity: 0.6; }
+    h2 { color: #58a6ff; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid #21262d; padding-bottom: 0.4rem; margin: 2rem 0 1rem; }
     p { margin-bottom: 1rem; }
+    ul { margin: 0 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.9rem; }
+    th { background: #161b22; color: #58a6ff; text-align: left; padding: 0.6rem; border: 1px solid #21262d; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    td { padding: 0.6rem; border: 1px solid #21262d; vertical-align: top; }
     a { color: #58a6ff; }
-    .step { background: #161b22; border: 1px solid #21262d; padding: 1rem; margin-bottom: 1rem; }
-    .step strong { color: #c9d1d9; display: block; margin-bottom: 0.4rem; }
+    .badge { display: inline-block; border: 1px solid #21262d; padding: 0.2rem 0.5rem; font-size: 0.7rem; margin-right: 0.3rem; opacity: 0.85; }
+    .platform-android { border-color: #3ddc84; color: #3ddc84; }
+    .platform-ios     { border-color: #aaaaff; color: #aaaaff; }
+    .platform-both    { border-color: #58a6ff; color: #58a6ff; }
     footer { margin-top: 3rem; font-size: 0.8rem; opacity: 0.5; border-top: 1px solid #21262d; padding-top: 1rem; }
   </style>
 </head>
 <body>
-  <h1>Delete Account — Doomsday Trainer</h1>
 
-  <p>You can request deletion of your Doomsday Trainer account and all associated data. Accounts are anonymous — no email or password is ever created — but your game stats and match history are stored on our backend.</p>
+  <div class="header-box">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Doomsday Trainer &nbsp;·&nbsp; Inefficient Code &nbsp;·&nbsp; Last updated April 2026</p>
+  </div>
 
-  <h2>What gets deleted</h2>
-  <p>Submitting a request will permanently delete:</p>
-  <ul style="margin: 0 0 1rem 1.5rem;">
-    <li>Your anonymous PlayFab account</li>
-    <li>All game stats (Elo, wins, match history)</li>
-    <li>Your ghost match recording</li>
-    <li>Your leaderboard entries</li>
+  <p>Doomsday Trainer is a mental-arithmetic training game. This policy explains what data is collected, why, and how you can have it removed. We collect the minimum necessary to provide analytics, leaderboards and matchmaking — no advertising, no tracking, no personal information.</p>
+
+  <h2>1. What we collect and why</h2>
+  <table>
+    <tr><th>Data</th><th>Platform</th><th>Stored where</th><th>Why</th></tr>
+    <tr>
+      <td>Anonymous usage events (screen views, game starts, match completions)</td>
+      <td><span class="badge platform-both">iOS · Android · Web</span></td>
+      <td>Firebase Analytics (Google)</td>
+      <td>Helps us understand how the app is used so we can improve it. No name, email or advertising ID is ever linked to these events.</td>
+    </tr>
+    <tr>
+      <td>Anonymous device identifier</td>
+      <td><span class="badge platform-both">iOS · Android</span></td>
+      <td>PlayFab (Microsoft Azure)</td>
+      <td>Creates and identifies your anonymous game account for leaderboards and 1v1 matchmaking. No name, email or password is ever required.</td>
+    </tr>
+    <tr>
+      <td>Game stats (Elo rating, wins, match count, average answer time)</td>
+      <td><span class="badge platform-both">iOS · Android</span></td>
+      <td>PlayFab (Microsoft Azure)</td>
+      <td>Powers global leaderboards and skill-based matchmaking.</td>
+    </tr>
+    <tr>
+      <td>Ghost match recording (your answer timings from a completed match)</td>
+      <td><span class="badge platform-both">iOS · Android</span></td>
+      <td>PlayFab (Microsoft Azure)</td>
+      <td>Used as a ghost opponent for other players when no live match is available.</td>
+    </tr>
+    <tr>
+      <td>Generated display name (e.g. "SwiftSolver42")</td>
+      <td><span class="badge platform-both">iOS · Android</span></td>
+      <td>PlayFab (Microsoft Azure)</td>
+      <td>Shown on leaderboards. Randomly generated — not your real name.</td>
+    </tr>
+    <tr>
+      <td>Leaderboard scores and cloud save (game progress)</td>
+      <td><span class="badge platform-android">Android</span></td>
+      <td>Google Play Games (Google)</td>
+      <td>Optional. Enables cloud backup and cross-device progress sync. Only activated if you connect Play Games in Settings.</td>
+    </tr>
+    <tr>
+      <td>Game Center authentication</td>
+      <td><span class="badge platform-ios">iOS</span></td>
+      <td>Apple Game Center</td>
+      <td>Optional. Enables global leaderboards via Apple's platform if you are signed in to Game Center in iOS Settings.</td>
+    </tr>
+    <tr>
+      <td>Local game progress (streaks, scores, settings)</td>
+      <td><span class="badge platform-both">iOS · Android · Web</span></td>
+      <td>Your device only</td>
+      <td>Stored locally in the app. Never transmitted. Deleted when you uninstall the app.</td>
+    </tr>
+  </table>
+
+  <h2>2. What we do NOT collect</h2>
+  <ul>
+    <li>Name, email address, phone number or any contact information</li>
+    <li>Location data</li>
+    <li>Camera or microphone access</li>
+    <li>Advertising identifiers (IDFA / GAID)</li>
+    <li>Crash logs or diagnostic telemetry</li>
+    <li>Browsing history or data from other apps</li>
+    <li>Payment or financial information</li>
   </ul>
-  <p>Google Play Games cloud saves and leaderboard scores are managed separately by Google — see below.</p>
+  <p>There are no adverts and no in-app purchases. Analytics data is fully anonymous and used only to improve the app — it is never used for advertising or sold to third parties.</p>
 
-  <h2>How to request deletion</h2>
+  <h2>3. Third-party services</h2>
 
-  <div class="step">
-    <strong>Option 1 — Email us</strong>
-    Send an email to <a href="mailto:inefficientcode@gmail.com">inefficientcode@gmail.com</a> with the subject line <em>"Delete My Account — Doomsday Trainer"</em>. We will process your request within 30 days.
-  </div>
+  <p><strong>Firebase Analytics (Google)</strong> <span class="badge platform-both">iOS · Android · Web</span> — collects anonymous usage events such as screen views and game interactions. No name, email, advertising ID or personal information is linked to these events. Data is retained for approximately 14 months per Google's standard policy. <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
 
-  <div class="step">
-    <strong>Option 2 — Google Play Games data</strong>
-    Open your device's Google account settings → Connected apps → Doomsday Trainer → Remove access. This revokes cloud save access and removes Play Games leaderboard data.
-  </div>
+  <p><strong>PlayFab (Microsoft Azure)</strong> <span class="badge platform-both">iOS · Android</span> — hosts anonymous player accounts, leaderboards, and matchmaking. <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">privacy.microsoft.com</a></p>
 
-  <h2>Retention period</h2>
-  <p>After a verified request, all PlayFab data is deleted within 30 days. Aggregate anonymised statistics (e.g. total match counts) that cannot be linked to any individual may be retained.</p>
+  <p><strong>Google Play Games</strong> <span class="badge platform-android">Android only</span> — optional cloud save and leaderboard service. <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
 
-  <footer>Doomsday Trainer · Inefficient Code · inefficientcode@gmail.com · Last updated March 2026</footer>
+  <p><strong>Apple Game Center</strong> <span class="badge platform-ios">iOS only</span> — optional leaderboard service. <a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></p>
+
+  <h2>4. Data sharing</h2>
+  <p>We do not sell, rent or share your data with advertisers or any third party beyond the services listed in section 3. Your anonymous device identifier and game stats are shared with PlayFab solely to provide in-game features. Analytics data is shared with Google solely to provide Firebase Analytics.</p>
+
+  <h2>5. Data retention</h2>
+  <p>Firebase Analytics data is retained for approximately 14 months. Your PlayFab account and associated game data are retained for as long as the app is in active use. If you request deletion, your PlayFab data will be permanently removed within 30 days.</p>
+
+  <h2>6. Your rights — deleting your data</h2>
+  <ul>
+    <li><strong>PlayFab account &amp; game stats:</strong> email <a href="mailto:inefficientcode@gmail.com">inefficientcode@gmail.com</a> with subject "Delete My Account — Doomsday Trainer". Processed within 30 days. Or visit: <a href="https://inefficientcodegit.github.io/PrivacyPolicy/delete-account.html">Delete Account page</a></li>
+    <li><strong>Firebase Analytics:</strong> opt out via your device's standard ad/analytics settings, or use a network-level blocker.</li>
+    <li><strong>Google Play Games data:</strong> Google account Settings → Connected apps → Doomsday Trainer → Remove access.</li>
+    <li><strong>Local device data:</strong> Uninstall the app.</li>
+  </ul>
+
+  <h2>7. Children</h2>
+  <p>Doomsday Trainer does not knowingly collect data from children under 13. The app contains no advertising, no social features, and no in-app purchases. All accounts are fully anonymous.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. The current version is always available at this URL. Continued use of the app after changes constitutes acceptance.</p>
+
+  <h2>9. Contact</h2>
+  <p><a href="mailto:inefficientcode@gmail.com">inefficientcode@gmail.com</a></p>
+
+  <footer>Doomsday Trainer &nbsp;·&nbsp; Inefficient Code &nbsp;·&nbsp; inefficientcode@gmail.com &nbsp;·&nbsp; April 2026</footer>
 </body>
 </html>
