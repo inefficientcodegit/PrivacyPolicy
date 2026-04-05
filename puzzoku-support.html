@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Puzzoku</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header { border: 3px solid #80f4ae; padding: 1.5rem; margin-bottom: 2rem; }
+    header h1 { font-size: 1.8rem; color: #80f4ae; text-transform: uppercase; letter-spacing: 0.1em; }
+    header p  { font-size: 0.85rem; opacity: 0.6; margin-top: 0.4rem; }
+    h2 {
+      font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: #80f4ae; margin: 2rem 0 0.6rem; border-bottom: 1px solid #21262d; padding-bottom: 0.4rem;
+    }
+    p  { margin-bottom: 0.8rem; font-size: 0.95rem; }
+    ul { margin: 0.4rem 0 0.8rem 1.4rem; font-size: 0.95rem; }
+    ul li { margin-bottom: 0.3rem; }
+    ol { margin: 0.4rem 0 0.8rem 1.4rem; font-size: 0.95rem; }
+    ol li { margin-bottom: 0.5rem; }
+    a  { color: #80f4ae; }
+    .faq-q {
+      color: #80f4ae; font-weight: bold; margin: 1.4rem 0 0.3rem;
+      font-size: 0.95rem;
+    }
+    .contact-box {
+      border: 1px solid #80f4ae; padding: 1.2rem 1.5rem; margin-top: 2rem;
+      background: #0f1f17;
+    }
+    .contact-box p { margin-bottom: 0.4rem; }
+    footer { margin-top: 3rem; border-top: 1px solid #21262d; padding-top: 1rem; font-size: 0.8rem; opacity: 0.5; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Support</h1>
+    <p>Puzzoku &nbsp;·&nbsp; Inefficient Code &nbsp;·&nbsp; Version 1.0</p>
+  </header>
+
+  <p>
+    Welcome to Puzzoku support. Find answers to common questions below, or get in touch directly —
+    we're happy to help.
+  </p>
+
+  <h2>How to Play</h2>
+  <p>
+    Puzzoku is an arithmetic logic puzzle. Your goal is to fill the grid by placing all the pieces
+    so that:
+  </p>
+  <ol>
+    <li>Every row contains each number from 1 to N exactly once (no repeats).</li>
+    <li>Every column contains each number from 1 to N exactly once (no repeats).</li>
+    <li>Every piece produces its target result using its given operator (+, −, ×, or ÷).</li>
+  </ol>
+  <p>
+    Drag pieces from the library tray at the bottom of the screen onto the board. Tap the library
+    button to expand the full piece list. Pieces that can't legally be placed in the current
+    position will be indicated on the board.
+  </p>
+
+  <h2>Hints</h2>
+  <p>
+    Tap the lightbulb icon during a game to request a hint. The hint system will highlight a
+    misplaced piece and animate it to a valid destination. Each hint adds 30 seconds to your
+    puzzle time.
+  </p>
+
+  <h2>Game Modes</h2>
+  <ul>
+    <li><strong>Campaign</strong> — 99 hand-crafted levels that ramp from 4×4 grids up to 10×10, introducing new operators and irregular board shapes as you progress.</li>
+    <li><strong>Game Generator</strong> — Build a custom puzzle. Choose a grid size (4–10) and which operators to include, then hit Start for an instantly generated game.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <p class="faq-q">My progress disappeared after reinstalling — can I get it back?</p>
+  <p>
+    Progress is saved locally on your device. On iOS, progress is stored in UserDefaults and will
+    survive reinstalls as long as the app was not fully removed and the device was not wiped.
+    Unfortunately if you deleted the app, local data cannot be recovered as we do not store
+    anything on a server.
+  </p>
+
+  <p class="faq-q">How do I reset my progress?</p>
+  <p>
+    There is currently no in-app reset option. To start fresh, uninstall and reinstall the app.
+  </p>
+
+  <p class="faq-q">What does the operator symbol on a piece mean?</p>
+  <p>
+    The number shown on a piece is the target result. The operator tells you which arithmetic
+    operation the cells must produce: + (add all cells), − (largest minus the rest),
+    × (multiply all cells), ÷ (largest divided by the rest). Single-cell pieces simply show
+    the number that must go in that cell.
+  </p>
+
+  <p class="faq-q">What is the daily streak?</p>
+  <p>
+    Win at least one puzzle per day to maintain your streak. If you miss a day, your streak
+    resets to zero. Your best streak is saved separately.
+  </p>
+
+  <p class="faq-q">Why does a piece show a red highlight on the board?</p>
+  <p>
+    A red or pulsing highlight means a conflict — the piece is currently positioned so that
+    a row or column contains a repeated number, or the piece's arithmetic result doesn't
+    match its target. Move the piece to a different position to resolve it.
+  </p>
+
+  <p class="faq-q">The app isn't working correctly on my device — what should I do?</p>
+  <p>
+    Try closing and reopening the app first. If the problem persists, uninstall and reinstall.
+    If you're still having trouble, please contact us with your device model and iOS version
+    and we'll investigate.
+  </p>
+
+  <h2>Contact Us</h2>
+
+  <div class="contact-box">
+    <p>For bug reports, feedback, or any questions:</p>
+    <p><strong>Email:</strong> <a href="mailto:inefficientcode@gmail.com">inefficientcode@gmail.com</a></p>
+    <p style="margin-top: 0.8rem; font-size: 0.85rem; opacity: 0.7;">
+      We aim to respond within 2 business days. Please include your device model,
+      iOS version, and a description of the issue.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2026 Inefficient Code &nbsp;·&nbsp; Puzzoku
+  </footer>
+
+</div>
+</body>
+</html>
